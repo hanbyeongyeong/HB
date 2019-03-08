@@ -7,6 +7,12 @@
 <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
 <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!--아이콘-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <style>
 .wrapper {
   min-height: 100vh;
@@ -39,12 +45,16 @@ section:nth-child(1) {
 }
 section:nth-child(2) {
   background: #F64747;
+  font-style: italic;
+  font-size: 100px;
+  font-weight: bold;
+
 }
 section:nth-child(3) {
   background: #22A7F0;
 }
 section:nth-child(4) {
-  background: #F9690E;
+  background: #424242;
 }
 section:nth-child(5) {
   background: #9B59B6;
@@ -59,7 +69,8 @@ section:nth-child(7) {
 .nav__wrapper {
   position: fixed;
   height: 100%;
-  padding: 30px;
+
+  padding-left: 30px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -74,6 +85,8 @@ section:nth-child(7) {
 }
 .nav {
   margin: 0 0 100px 30px;
+  width:auto;
+  z-index:3;
 }
 .nav__counter {
   font-size: 24px;
@@ -155,6 +168,19 @@ section:nth-child(7) {
   opacity: 1;
   overflow: visible;
 }
+.nav li.active p{
+width:auto;
+}
+
+#sec3 td{
+width:250px;
+height: 250px;
+}
+
+#sec3 {
+  margin-left: 40%;
+}
+
 
 </style>
 </head>
@@ -165,54 +191,62 @@ section:nth-child(7) {
 
   <div class="wrapper" >
 
+
     <nav class="nav__wrapper" id="navbar-example">
       <ul class="nav">
-
+<h2><strong>[CLILK NAV MENU!]</strong></h2>
         <li role="presentation" class="active">
-		<a href="#section1"><span>CLICK ME:</span>
-            <span class="nav__counter">01</span>
+		<a href="#section1">
+            <span class="nav__counter"><b>01. HBY</b></span>
+            <span> .CLICK ME <i class="fa fa-arrow-left"></i></span>
             <h3 class="nav__title">Intro</h3>
-            <p class="nav__body"><strong>Timeline-style navigation</strong>. Scroll down to see what happens, or click on a number in the nav.</p>
+            <p class="nav__body"><strong></strong></p>
+
           </a>
         </li>
 
         <li role="presentation">
-          <a href="#section2"><span>CLICK ME:</span>
-            <span class="nav__counter">02</span>
-            <h3 class="nav__title">Section 2 Title</h3>
-            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          <a href="#section2">
+            <span class="nav__counter"><b>02. I AM </b></span>
+            <span> .CLICK ME <i class="fa fa-arrow-left"></i></span>
+            <h3 class="nav__title">Sincerity Man</h3>
+            <p class="nav__body">.</p>
           </a>
         </li>
 
         <li role="presentation">
-          <a href="#section3"><span>CLICK ME:</span>
-            <span class="nav__counter">03</span>
-            <h3 class="nav__title">Section 3 Title</h3>
-            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          <a href="#section3">
+            <span class="nav__counter"><b>03. USED THIS</b></span>
+            <span> .CLICK ME <i class="fa fa-arrow-left"></i></span>
+            <h3 class="nav__title">JAVA</h3>
+            <p class="nav__body"></p>
           </a>
         </li>
-        
+
         <li role="presentation">
-          <a href="#section4"><span>CLICK ME:</span>
-            <span class="nav__counter">04</span>
-            <h3 class="nav__title">Section 4 Title</h3>
-            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          <a href="#section4">
+            <span class="nav__counter"><b>04 .MY PROJECT-1</b></span>
+            <span> .CLICK ME <i class="fa fa-arrow-left"></i></span>
+            <h3 class="nav__title">SPRINGEDU</h3>
+            <p class="nav__body">springframework 통한 게시판 웹 만들기 연습</p>
           </a>
         </li>
-        
+
         <li role="presentation">
-          <a href="#section5"><span>CLICK ME:</span>
-            <span class="nav__counter">05</span>
-            <h3 class="nav__title">Section 5 Title</h3>
-            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          <a href="#section5">
+            <span class="nav__counter"><b>05 .MY PROJECT-2</b></span>
+            <span> .CLICK ME <i class="fa fa-arrow-left"></i></span>
+            <h3 class="nav__title">TEAM PROJECT : LKH</h3>
+            <p class="nav__body">기업 홍보 및 인트라넷 사이트.</p>
           </a>
         </li>
-        
+
         <li role="presentation">
-          <a href="#section6"><span>CLICK ME:</span>
-            <span class="nav__counter">06</span>
-            <h3 class="nav__title">Section 6 Title</h3>
-            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          <a href="#section6"/>
+            <span class="nav__counter"><b>06.THANK YOU</b></span>
+            <!--<span> .CLICK ME <i class="fa fa-arrow-left"></i></span>-->
+            <h3 class="nav__title">잘부탁드립니다.</h3>
+            <p class="nav__body"></p>
           </a>
         </li>
 
@@ -220,19 +254,62 @@ section:nth-child(7) {
     </nav>
 
     <section class="section section1" id="section1">
-      Scroll down or use the nav.
+      HBY
     </section>
 
     <section class="section section2" id="section2">
-      Section 2
+<div style="font-size:30px;font=">
+<h1 style="text-align:center; font-size:60px; margin-bottom:60px;"><strong>안녕하십니까!</strong></h1>
+
+ 개발자가 되기위해 뛰어든지 5개월 살짝 넘은 한병영이라고 합니다.</br>
+  개발자가 되기위해 뛰어든지 5개월 살짝 넘은 한병영이라고 합니다.</br>
+   개발자가 되기위해 뛰어든지 5개월 살짝 넘은 한병영이라고 합니다.</br>
+    개발자가 되기위해 뛰어든지 5개월 살짝 넘은 한병영이라고 합니다.</br>
+     개발자가 되기위해 뛰어든지 5개월 살짝 넘은 한병영이라고 합니다.</br>
+      개발자가 되기위해 뛰어든지 5개월 살짝 넘은 한병영이라고 합니다.</br>
+       개발자가 되기위해 뛰어든지 5개월 살짝 넘은 한병영이라고 합니다.</br>
+        개발자가 되기위해 뛰어든지 5개월 살짝 넘은 한병영이라고 합니다.</br>
+         개발자가 되기위해 뛰어든지 5개월 살짝 넘은 한병영이라고 합니다.</br>
+</div>
+
     </section>
 
     <section class="section section3" id="section3">
-      Section 3
+      <table style="margin-left:20%;">
+       
+
+       <tbody id="sec3">
+         <tr>
+           <td><img src="./popolimg/그림1.png" width="150" height="150"></td>
+           <td><img src="./popolimg/그림2.png" width="150" height="150"></td>
+           <td><img src="./popolimg/그림3.png" width="150" height="150"></td>
+          <td><img src="./popolimg/그림4.png" width="150" height="150"></td>
+         </tr>
+
+         <tr>
+              <td><img src="./popolimg/그림5.png" width="150" height="150"></td>
+           <td><img src="./popolimg/그림7.png" width="150" height="150"></td>
+           <td><img src="./popolimg/그림8.png" width="150" height="150"></td>
+           <td><img src="./popolimg/그림9.png" width="150" height="150"></td>
+         </tr>
+
+         <tr>
+              <td><img src="./popolimg/그림6.png" width="150" height="150"></td>
+           <td><img src="./popolimg/그림10.png" width="150" height="150"></td>
+           <td><img src="./popolimg/그림11.png" width="150" height="150"></td>
+           <td><img src="./popolimg/그림12.png" width="150" height="150"></td>
+
+         </tr>
+
+       </tbody>
+
+     </table>
     </section>
 
     <section class="section section4" id="section4">
-      Section 4
+
+
+
     </section>
 
     <section class="section section5" id="section5">
@@ -247,12 +324,12 @@ section:nth-child(7) {
   </div>
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 // SMOOTH SCROLLING SECTIONS
 $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
         || location.hostname == this.hostname) {
 
         var target = $(this.hash);
